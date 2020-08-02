@@ -1,0 +1,17 @@
+{% extends 'products/layout.html' %}
+{% block heading %} Order Submission {% endblock %}
+{% block body %}
+<div class="order-placed" style="text-align: center; color: #00AC5C">
+<h1 style="margin: 20px 0px;">Order Placed Successfully. Your Product is on the Way!</h1>
+<h3 style="margin: 10px 0px;">Name: {{ fname }} {{ lname }}</h3>
+<h3 style="margin: 10px 0px;">Email Address: {{ email }}</h3>
+<h3 style="margin: 10px 0px;">Shipping Address: {{ address }}</h3>
+<h3 style="margin: 10px 0px;">Shipping City: {{ city }}</h3>
+<h3 style="margin: 10px 0px;">Postal Code: {{ postalCode }}</h3>
+<h3 style="margin: 10px 0px;">Mobile Number: {{ mobileNumber }}</h3>
+<h3 style="margin: 10px 0px;">Product Price: Rs. {{ product.price }}/-</h3>
+<h3 style="margin: 10px 0px;">Shipping Cost: Rs. 50/-</h3>
+<h3 style="margin: 10px 0px;">Total Cost: {{ totalPrice }}</h3>
+<h1 style="margin: 20px 0px;">Thanks for the Order from HRF</h1>
+</div>
+{% endblock %}
